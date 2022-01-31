@@ -74,7 +74,41 @@ For any non-null reference variables a, b and c
 
 ## Secure Coding in Java SE Application
 
+### Designing Secure Object
 
+#### Limiting accessibility
+
+- Make the object `private` and write a method to provide the necessary functionality.
+
+- Export the security packages to the specific modules that should have access.
+
+  ```java
+  exports animals.security to zoo.staff;
+  ```
+
+#### Restricting Extensibility
+
+Make sensitive class as `final` prevents any subclasses.
+
+#### Creating immutable objects
+
+- Mark the class as `final`.
+- Mark all the instance variables `private`.
+- Don't define any setter methods and make fields final.
+- Don't allow referenced mutable objects to be modified.
+- Use a constructor to set all properties of the object, making a copy if needed.
+
+#### Cloning objects
+
+Implement `Cloneable` interface if you want classes to be able to call the `clone()`method on your object.
+
+> *Defensive copy* is the copy being made in case other code does something unexpected.
+
+#### Introducing Injection and Input Validation
+
+> *Injection* is an attack where dangerous input runs in a program as part of a command.
+
+> An *exploit* is an attack that takes advantage of weak security. 
 
 ## Database Applications with JDBC
 
