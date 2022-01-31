@@ -1,12 +1,11 @@
-# Why React?
+# React 101
 
-React.js is a JavaScript library. It was developed by engineers at Facebook.
+https://www.codecademy.com/learn/react-101/modules/react-101-jsx-u/cheatsheet
 
-A few of the reasons why people choose to program with React:
+# React-Router
 
-- React is *fast*.
-- React is *modular*.
-- React is *scalable*.
-- React is *flexible*.
-- React is *popular*.
+https://www.codecademy.com/learn/learn-react-router/modules/learn-react-router
 
+# Redux
+
+https://www.codecademy.com/learn/learn-redux/modules/core-concepts-in-redux/cheatsheet
